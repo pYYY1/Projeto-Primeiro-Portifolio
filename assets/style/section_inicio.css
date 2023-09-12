@@ -3,14 +3,14 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 720px;
+    height: 650px;
     overflow: hidden;
-    background: linear-gradient(60deg, #333 50%, #8a2be2 50%);
+    background: linear-gradient(60deg, #333 50%, #9684a3 50%);
 }
 
 .texto_inicial {
     text-align: center;
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,47 +25,120 @@
     margin-bottom: 10px;
     width: 0;
     text-align: justify;
+    color: #aab69b;
 }
 
 .text:nth-child(1),
-.text:nth-child(2){
+.text:nth-child(2) {
     width: 100%;
     opacity: 0;
     animation: type 2.3s, cursor .4s step-end infinite alternate;
     animation-fill-mode: forwards;
 }
 
-.text:nth-child(1){
-    font-size: 3em;
+.text:nth-child(1) {
+    font-size: 2em;
 }
 
-.text:nth-child(2){
+.text:nth-child(2) {
     animation-delay: 0.8s;
-    font-size: 3em;
+    font-size: 5em;
 }
 
-.text:nth-child(3){
+.text:nth-child(3) {
     width: 100%;
     opacity: 0;
     animation: type 2.5s, cursor .4s step-end infinite alternate;
     animation-delay: 1.6s;
     animation-fill-mode: forwards;
     border-right: 5px solid;
+    font-size: 2.5em;
 }
 
-@keyframes cursor{
-    50% { border-color: transparent;}
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
 }
 
 
-@keyframes type{
-    0%{
+@keyframes type {
+    0% {
         width: 0;
     }
-    1%{
+
+    1% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         opacity: 1;
+    }
+}
+
+.botao_linkedin {
+    background-color: #8870ff;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 90px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    border: 2px solid transparent;
+    font-family: monospace
+}
+
+.botao_linkedin:hover {
+    background-color: #9684a3;
+    border-color: #785dff;
+    color: black;
+    transform: scale(1.10);
+}
+
+.imagem_inicial {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1500px) {
+    .imagem_inicial {
+        display: none;
+    }
+
+    .texto_inicial {
+        width: 60%;
+    }
+
+    .botao_linkedin {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 850px) {
+    .text:nth-child(1) {
+        font-size: 1em;
+        margin-left: 50px;
+    }
+
+    .text:nth-child(2) {
+        font-size: 2em;
+        margin-left: 50px;
+    }
+
+    .text:nth-child(3) {
+        font-size: 1em;
+        margin-left: 50px;
+    }
+
+    .botao_linkedin {
+        font-size: 14px;
+        padding: 15px 60px;
+    }
+
+    .texto_inicial {
+        width: 50%;
     }
 }
