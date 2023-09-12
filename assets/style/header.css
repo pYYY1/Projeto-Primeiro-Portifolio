@@ -1,0 +1,50 @@
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.047);
+    backdrop-filter: blur(20px);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    position: fixed;
+    border-bottom: 1px solid white;
+}
+
+.logo img,
+.logo p {
+    width: 60px;
+    height: 60px;
+}
+
+header .nav-bar a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    font-size: 18px;
+    transition: opacity 0.1s ease-in-out;
+}
+
+header .nav-bar a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.35s ease-in-out;
+}
+
+header .nav-bar a:hover {
+    opacity: 0.7;
+}
+
+header .nav-bar a:hover::after {
+    transform: scaleX(1);
+}
