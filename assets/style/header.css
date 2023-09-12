@@ -1,3 +1,4 @@
+/* Estilos para a navbar em telas maiores que 600px */
 header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.047);
@@ -11,10 +12,10 @@ header {
     border-bottom: 1px solid white;
 }
 
-.logo img,
-.logo p {
+.logo img {
     width: 60px;
     height: 60px;
+    margin-left: 10px;
 }
 
 header .nav-bar a {
@@ -47,4 +48,18 @@ header .nav-bar a:hover {
 
 header .nav-bar a:hover::after {
     transform: scaleX(1);
+}
+
+@media (max-width: 600px) {
+    header .nav-bar {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo img {
+        margin: 0;
+    }
 }
