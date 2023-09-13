@@ -76,24 +76,29 @@
     }
 }
 
-.botao_linkedin {
-    background-color: #8870ff;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 20px 90px;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
-    border: 2px solid transparent;
-    font-family: monospace
+.social-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.botao_linkedin:hover {
+.social-button {
+    background-color: #8870ff;
+    color: #fff; 
+    padding: 10px 12px; 
+    text-decoration: none;
+    border-radius: 50%; 
+    transition: transform 0.3s ease;
+    display: flex;
+    margin: 10px 8px;
+}
+
+.social-button i {
+    font-size: 30px; /* Aumente o tamanho dos ícones */
+}
+
+.social-button:hover {
     background-color: #9684a3;
-    border-color: #785dff;
-    color: black;
     transform: scale(1.10);
 }
 
@@ -117,7 +122,7 @@
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
     .text:nth-child(1) {
         font-size: 1em;
         margin-left: 50px;
