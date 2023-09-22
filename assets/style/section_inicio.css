@@ -1,17 +1,16 @@
 /* Classes */
 
-.section_inicio {
+.inicio {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 650px;
+    height: 740px;
     overflow: hidden;
     background: linear-gradient(60deg, #383939 50%, #149c68 50%);
 }
 
 .texto_inicial {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
