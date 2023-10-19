@@ -1,11 +1,26 @@
-/* Estilos para a seção de habilidades */
 .habilidades {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #383939;
     padding: 20px 0;
     height: 80vh;
+    flex-direction: column;
+}
+
+.habilidades h3{
+    font-size: 3em;
+    color: #149c68;
+    text-decoration: underline;
+    font-family: monospace;
+}
+
+.habilidades_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10vh;
 }
 
 .habilidade {
@@ -13,10 +28,9 @@
 }
 
 .habilidade img {
-    width: 200px ;
-    height: auto;
-    color: #149c68;
-    padding: 10px; /* Espaçamento interno */
+    display: block;
+    margin: auto;
+    height: 200px;
 }
 
 .habilidade p {
