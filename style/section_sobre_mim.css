@@ -1,0 +1,65 @@
+/* Estilos para a nova seção */
+.sobre_mim {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    background-color: #484949;
+}
+
+.sobre_mim .container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.sobre_mim img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #149c68;
+}
+
+
+.text_sobremim {
+    width: 50%;
+}
+
+.sobre_mim h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #149c68;
+    text-align: justify;
+}
+
+.sobre_mim p {
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: justify;
+    color: #fffedb;
+}
+
+.infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+
+.item {
+    text-align: justify;
+    margin: 1vh 3vh;
+}
+
+.item h4 {
+    color: #149c68;
+    font-size: 1.2em;
+}
+
+.item p {
+    color: #fffedb;
+    font-size: 1em;
+}
