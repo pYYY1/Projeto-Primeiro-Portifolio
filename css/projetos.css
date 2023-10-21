@@ -1,0 +1,57 @@
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85vh;
+    background-color: #484949;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 7em;
+    color: #149c68;
+    text-decoration: underline;
+    font-family: monospace;
+    margin-top: 10vh;
+}
+
+.centralizar_projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumb {
+    width: 40vh;
+    height: 30vh;
+    background-color: #149c68;
+    margin: 0px 20px;
+    border-radius: 30px;
+    margin-top: 10vh;
+    overflow: hidden;
+    border: 1.5px solid #484949;
+    transition: transform 0.2s, cursor 0.2s, letter-spacing 0.3s;
+    cursor: pointer; 
+}
+
+.thumb:hover {
+    transform: scale(1.1);
+    letter-spacing: 2.5px;
+}
+
+.thumb .breve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.thumb .breve p {
+    margin: 0;
+    color: #fffedb;
+    text-align: center;
+    background-color: #383939;
+    font-size: 30px;
+    width: 100%;
+    font-family: inter;
+}

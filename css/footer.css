@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #383939;
+    height: auto;
+    flex-direction: row;
+}
+
+footer p {
+    font-family: inter;
+    font-size: 1.5em;
+    color: #fffedb;
+    padding: 10px;
+    margin: 0;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp a {
+    text-decoration: none;
+    font-family: inter;
+    font-size: 1.5em;
+    color: #fffedb;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
