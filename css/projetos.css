@@ -8,7 +8,7 @@
 }
 
 .projetos h2 {
-    font-size: 7em;
+    font-size: 6em;
     color: #149c68;
     text-decoration: underline;
     font-family: monospace;
@@ -51,7 +51,7 @@
     color: #fffedb;
     text-align: center;
     background-color: #383939;
-    font-size: 30px;
+    font-size: 24px;
     width: 100%;
     font-family: inter;
 }

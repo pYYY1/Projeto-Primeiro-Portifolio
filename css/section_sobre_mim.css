@@ -27,10 +27,12 @@
 }
 
 .sobre_mim h3 {
-    font-size: 1.8em;
+    font-size: 4em;
     margin-bottom: 20px;
     color: #149c68;
     text-align: justify;
+    text-decoration: underline;
+    font-family: monospace;
 }
 
 .sobre_mim p {
